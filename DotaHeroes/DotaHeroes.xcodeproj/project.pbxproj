@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150D3900252DCF1F00851C87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D38FF252DCF1F00851C87 /* AppDelegate.swift */; };
+		150D3902252DCF1F00851C87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D3901252DCF1F00851C87 /* SceneDelegate.swift */; };
+		150D3904252DCF1F00851C87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D3903252DCF1F00851C87 /* ViewController.swift */; };
+		150D3907252DCF1F00851C87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150D3905252DCF1F00851C87 /* Main.storyboard */; };
+		150D3909252DCF2000851C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150D3908252DCF2000851C87 /* Assets.xcassets */; };
+		150D390C252DCF2000851C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150D390A252DCF2000851C87 /* LaunchScreen.storyboard */; };
+		150D3922252DCF2000851C87 /* DotaHeroesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D3921252DCF2000851C87 /* DotaHeroesUITests.swift */; };
+		150D3935252DD79500851C87 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D3934252DD79500851C87 /* Hero.swift */; };
+		150D393C252DD7E900851C87 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D393B252DD7E900851C87 /* ViewModel.swift */; };
+		150D3944252DD81600851C87 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D3943252DD81600851C87 /* HeroCell.swift */; };
+		151CABA32530778700156CD4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CABA22530778700156CD4 /* DetailViewController.swift */; };
+		15B60AF5252F245A006EE0E1 /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B60AF4252F245A006EE0E1 /* ViewModelTest.swift */; };
+		15B60B06252F35A3006EE0E1 /* HeroesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B60B05252F35A3006EE0E1 /* HeroesProvider.swift */; };
+		15B60B0B252F35B6006EE0E1 /* HeroesProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B60B0A252F35B6006EE0E1 /* HeroesProviderTest.swift */; };
+		15B60B15252F364E006EE0E1 /* sample_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B60B14252F364E006EE0E1 /* sample_response.json */; };
+		15B60B1A252F383F006EE0E1 /* HeroResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B60B19252F383F006EE0E1 /* HeroResponse.swift */; };
+		15B60B1F252F415A006EE0E1 /* HeroesProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B60B1E252F415A006EE0E1 /* HeroesProviderError.swift */; };
+		15B60B24252F4569006EE0E1 /* HeroesEndpointTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B60B23252F4569006EE0E1 /* HeroesEndpointTest.swift */; };
+		15B60B29252F459B006EE0E1 /* HeroesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B60B28252F459B006EE0E1 /* HeroesEndpoint.swift */; };
+		15B60B2E252F46C4006EE0E1 /* HeroesProvider+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B60B2D252F46C4006EE0E1 /* HeroesProvider+Combine.swift */; };
+		15B60B43252F6212006EE0E1 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 15B60B42252F6212006EE0E1 /* Nuke */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		150D3913252DCF2000851C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150D38F4252DCF1F00851C87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150D38FB252DCF1F00851C87;
+			remoteInfo = DotaHeroes;
+		};
+		150D391E252DCF2000851C87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150D38F4252DCF1F00851C87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150D38FB252DCF1F00851C87;
+			remoteInfo = DotaHeroes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		150D38FC252DCF1F00851C87 /* DotaHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D38FF252DCF1F00851C87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		150D3901252DCF1F00851C87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		150D3903252DCF1F00851C87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		150D3906252DCF1F00851C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		150D3908252DCF2000851C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		150D390B252DCF2000851C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		150D390D252DCF2000851C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150D3912252DCF2000851C87 /* DotaHeroesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotaHeroesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D3918252DCF2000851C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150D391D252DCF2000851C87 /* DotaHeroesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotaHeroesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D3921252DCF2000851C87 /* DotaHeroesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroesUITests.swift; sourceTree = "<group>"; };
+		150D3923252DCF2000851C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150D3934252DD79500851C87 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		150D393B252DD7E900851C87 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		150D3943252DD81600851C87 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		151CABA22530778700156CD4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		15B60AF4252F245A006EE0E1 /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
+		15B60B05252F35A3006EE0E1 /* HeroesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesProvider.swift; sourceTree = "<group>"; };
+		15B60B0A252F35B6006EE0E1 /* HeroesProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesProviderTest.swift; sourceTree = "<group>"; };
+		15B60B14252F364E006EE0E1 /* sample_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_response.json; sourceTree = "<group>"; };
+		15B60B19252F383F006EE0E1 /* HeroResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroResponse.swift; sourceTree = "<group>"; };
+		15B60B1E252F415A006EE0E1 /* HeroesProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesProviderError.swift; sourceTree = "<group>"; };
+		15B60B23252F4569006EE0E1 /* HeroesEndpointTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesEndpointTest.swift; sourceTree = "<group>"; };
+		15B60B28252F459B006EE0E1 /* HeroesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesEndpoint.swift; sourceTree = "<group>"; };
+		15B60B2D252F46C4006EE0E1 /* HeroesProvider+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeroesProvider+Combine.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		150D38F9252DCF1F00851C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B60B43252F6212006EE0E1 /* Nuke in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150D390F252DCF2000851C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150D391A252DCF2000851C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		150D38F3252DCF1F00851C87 = {
+			isa = PBXGroup;
+			children = (
+				150D38FE252DCF1F00851C87 /* DotaHeroes */,
+				150D3915252DCF2000851C87 /* DotaHeroesTests */,
+				150D3920252DCF2000851C87 /* DotaHeroesUITests */,
+				150D38FD252DCF1F00851C87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		150D38FD252DCF1F00851C87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				150D38FC252DCF1F00851C87 /* DotaHeroes.app */,
+				150D3912252DCF2000851C87 /* DotaHeroesTests.xctest */,
+				150D391D252DCF2000851C87 /* DotaHeroesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		150D38FE252DCF1F00851C87 /* DotaHeroes */ = {
+			isa = PBXGroup;
+			children = (
+				15B60B04252F3590006EE0E1 /* Adapter */,
+				150D3939252DD7BB00851C87 /* View */,
+				150D3933252DD78600851C87 /* Entity */,
+				150D38FF252DCF1F00851C87 /* AppDelegate.swift */,
+				150D3901252DCF1F00851C87 /* SceneDelegate.swift */,
+				150D3908252DCF2000851C87 /* Assets.xcassets */,
+				150D390A252DCF2000851C87 /* LaunchScreen.storyboard */,
+				150D390D252DCF2000851C87 /* Info.plist */,
+			);
+			path = DotaHeroes;
+			sourceTree = "<group>";
+		};
+		150D3915252DCF2000851C87 /* DotaHeroesTests */ = {
+			isa = PBXGroup;
+			children = (
+				15B60B10252F360A006EE0E1 /* ViewModel */,
+				15B60B0F252F35F6006EE0E1 /* Adapter */,
+				150D3918252DCF2000851C87 /* Info.plist */,
+			);
+			path = DotaHeroesTests;
+			sourceTree = "<group>";
+		};
+		150D3920252DCF2000851C87 /* DotaHeroesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				150D3921252DCF2000851C87 /* DotaHeroesUITests.swift */,
+				150D3923252DCF2000851C87 /* Info.plist */,
+			);
+			path = DotaHeroesUITests;
+			sourceTree = "<group>";
+		};
+		150D3933252DD78600851C87 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				150D3934252DD79500851C87 /* Hero.swift */,
+				15B60B19252F383F006EE0E1 /* HeroResponse.swift */,
+				15B60B1E252F415A006EE0E1 /* HeroesProviderError.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		150D3939252DD7BB00851C87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				150D393A252DD7DD00851C87 /* ViewModel */,
+				150D3905252DCF1F00851C87 /* Main.storyboard */,
+				150D3903252DCF1F00851C87 /* ViewController.swift */,
+				150D3943252DD81600851C87 /* HeroCell.swift */,
+				151CABA22530778700156CD4 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		150D393A252DD7DD00851C87 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				150D393B252DD7E900851C87 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		15B60B04252F3590006EE0E1 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				15B60B05252F35A3006EE0E1 /* HeroesProvider.swift */,
+				15B60B28252F459B006EE0E1 /* HeroesEndpoint.swift */,
+				15B60B2D252F46C4006EE0E1 /* HeroesProvider+Combine.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		15B60B0F252F35F6006EE0E1 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				15B60B0A252F35B6006EE0E1 /* HeroesProviderTest.swift */,
+				15B60B14252F364E006EE0E1 /* sample_response.json */,
+				15B60B23252F4569006EE0E1 /* HeroesEndpointTest.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		15B60B10252F360A006EE0E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				15B60AF4252F245A006EE0E1 /* ViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		150D38FB252DCF1F00851C87 /* DotaHeroes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150D3926252DCF2000851C87 /* Build configuration list for PBXNativeTarget "DotaHeroes" */;
+			buildPhases = (
+				150D38F8252DCF1F00851C87 /* Sources */,
+				150D38F9252DCF1F00851C87 /* Frameworks */,
+				150D38FA252DCF1F00851C87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DotaHeroes;
+			packageProductDependencies = (
+				15B60B42252F6212006EE0E1 /* Nuke */,
+			);
+			productName = DotaHeroes;
+			productReference = 150D38FC252DCF1F00851C87 /* DotaHeroes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		150D3911252DCF2000851C87 /* DotaHeroesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150D3929252DCF2000851C87 /* Build configuration list for PBXNativeTarget "DotaHeroesTests" */;
+			buildPhases = (
+				150D390E252DCF2000851C87 /* Sources */,
+				150D390F252DCF2000851C87 /* Frameworks */,
+				150D3910252DCF2000851C87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				150D3914252DCF2000851C87 /* PBXTargetDependency */,
+			);
+			name = DotaHeroesTests;
+			productName = DotaHeroesTests;
+			productReference = 150D3912252DCF2000851C87 /* DotaHeroesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		150D391C252DCF2000851C87 /* DotaHeroesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150D392C252DCF2000851C87 /* Build configuration list for PBXNativeTarget "DotaHeroesUITests" */;
+			buildPhases = (
+				150D3919252DCF2000851C87 /* Sources */,
+				150D391A252DCF2000851C87 /* Frameworks */,
+				150D391B252DCF2000851C87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				150D391F252DCF2000851C87 /* PBXTargetDependency */,
+			);
+			name = DotaHeroesUITests;
+			productName = DotaHeroesUITests;
+			productReference = 150D391D252DCF2000851C87 /* DotaHeroesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		150D38F4252DCF1F00851C87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					150D38FB252DCF1F00851C87 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					150D3911252DCF2000851C87 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 150D38FB252DCF1F00851C87;
+					};
+					150D391C252DCF2000851C87 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 150D38FB252DCF1F00851C87;
+					};
+				};
+			};
+			buildConfigurationList = 150D38F7252DCF1F00851C87 /* Build configuration list for PBXProject "DotaHeroes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 150D38F3252DCF1F00851C87;
+			packageReferences = (
+				15B60B41252F6212006EE0E1 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
+			productRefGroup = 150D38FD252DCF1F00851C87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				150D38FB252DCF1F00851C87 /* DotaHeroes */,
+				150D3911252DCF2000851C87 /* DotaHeroesTests */,
+				150D391C252DCF2000851C87 /* DotaHeroesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		150D38FA252DCF1F00851C87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150D390C252DCF2000851C87 /* LaunchScreen.storyboard in Resources */,
+				150D3909252DCF2000851C87 /* Assets.xcassets in Resources */,
+				150D3907252DCF1F00851C87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150D3910252DCF2000851C87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B60B15252F364E006EE0E1 /* sample_response.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150D391B252DCF2000851C87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		150D38F8252DCF1F00851C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B60B2E252F46C4006EE0E1 /* HeroesProvider+Combine.swift in Sources */,
+				15B60B1F252F415A006EE0E1 /* HeroesProviderError.swift in Sources */,
+				15B60B06252F35A3006EE0E1 /* HeroesProvider.swift in Sources */,
+				151CABA32530778700156CD4 /* DetailViewController.swift in Sources */,
+				15B60B29252F459B006EE0E1 /* HeroesEndpoint.swift in Sources */,
+				150D393C252DD7E900851C87 /* ViewModel.swift in Sources */,
+				15B60B1A252F383F006EE0E1 /* HeroResponse.swift in Sources */,
+				150D3904252DCF1F00851C87 /* ViewController.swift in Sources */,
+				150D3900252DCF1F00851C87 /* AppDelegate.swift in Sources */,
+				150D3944252DD81600851C87 /* HeroCell.swift in Sources */,
+				150D3902252DCF1F00851C87 /* SceneDelegate.swift in Sources */,
+				150D3935252DD79500851C87 /* Hero.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150D390E252DCF2000851C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B60AF5252F245A006EE0E1 /* ViewModelTest.swift in Sources */,
+				15B60B0B252F35B6006EE0E1 /* HeroesProviderTest.swift in Sources */,
+				15B60B24252F4569006EE0E1 /* HeroesEndpointTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150D3919252DCF2000851C87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150D3922252DCF2000851C87 /* DotaHeroesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		150D3914252DCF2000851C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150D38FB252DCF1F00851C87 /* DotaHeroes */;
+			targetProxy = 150D3913252DCF2000851C87 /* PBXContainerItemProxy */;
+		};
+		150D391F252DCF2000851C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150D38FB252DCF1F00851C87 /* DotaHeroes */;
+			targetProxy = 150D391E252DCF2000851C87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		150D3905252DCF1F00851C87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				150D3906252DCF1F00851C87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		150D390A252DCF2000851C87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				150D390B252DCF2000851C87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		150D3924252DCF2000851C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		150D3925252DCF2000851C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		150D3927252DCF2000851C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaHeroes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renaldy.DotaHeroes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		150D3928252DCF2000851C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaHeroes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renaldy.DotaHeroes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		150D392A252DCF2000851C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaHeroesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renaldy.DotaHeroesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotaHeroes.app/DotaHeroes";
+			};
+			name = Debug;
+		};
+		150D392B252DCF2000851C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaHeroesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renaldy.DotaHeroesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotaHeroes.app/DotaHeroes";
+			};
+			name = Release;
+		};
+		150D392D252DCF2000851C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaHeroesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renaldy.DotaHeroesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DotaHeroes;
+			};
+			name = Debug;
+		};
+		150D392E252DCF2000851C87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DotaHeroesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.renaldy.DotaHeroesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DotaHeroes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		150D38F7252DCF1F00851C87 /* Build configuration list for PBXProject "DotaHeroes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D3924252DCF2000851C87 /* Debug */,
+				150D3925252DCF2000851C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150D3926252DCF2000851C87 /* Build configuration list for PBXNativeTarget "DotaHeroes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D3927252DCF2000851C87 /* Debug */,
+				150D3928252DCF2000851C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150D3929252DCF2000851C87 /* Build configuration list for PBXNativeTarget "DotaHeroesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D392A252DCF2000851C87 /* Debug */,
+				150D392B252DCF2000851C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150D392C252DCF2000851C87 /* Build configuration list for PBXNativeTarget "DotaHeroesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D392D252DCF2000851C87 /* Debug */,
+				150D392E252DCF2000851C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15B60B41252F6212006EE0E1 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15B60B42252F6212006EE0E1 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15B60B41252F6212006EE0E1 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 150D38F4252DCF1F00851C87 /* Project object */;
+}
